@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @ObservedObject var viewModel: LoginViewModel
     
     var body: some View {
         VStack(spacing: 30) {
@@ -20,31 +19,41 @@ struct LoginView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Email/Username")
                     .foregroundColor(.gray)
-                TextField("", text: $email)
+                TextField("", text: $viewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
+                    .keyboardType(.emailAddress)
+                    .disableAutocorrection(true)
             }
             .padding(.horizontal)
             
             VStack(alignment: .leading, spacing: 8) {
                 Text("Password")
                     .foregroundColor(.gray)
-                SecureField("", text: $password)
+                SecureField("", text: $viewModel.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .padding(.horizontal)
             
-            Button(action: {
-                // oubli mdp
-            }) {
-                Text("Forgot password?")
-                    .foregroundColor(.blue)
+            if let error = viewModel.errorMessage {
+                Text(error)
+                    .foregroundColor(.red)
+                    .padding(.horizontal)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal)
             
             Button(action: {
-                // sign in logic
+                            // No action as it's not in requirements
+                        }) {
+                            Text("Forgot password?")
+                                .foregroundColor(.blue)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal)
+            
+            Button(action: {
+                Task {
+                    await viewModel.login()
+                }
             }) {
                 Text("Sign In")
                     .foregroundColor(.white)
@@ -54,10 +63,9 @@ struct LoginView: View {
                     .cornerRadius(10)
             }
             .padding(.horizontal)
-            .padding(.top, 20)
             
             Button(action: {
-                // register logic
+                // Navigate to register screen
             }) {
                 Text("Register")
                     .foregroundColor(.blue)
@@ -71,5 +79,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginView(viewModel: LoginViewModel {})
 }
