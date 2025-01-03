@@ -1,5 +1,5 @@
 //
-//  AuthEndpoint.swift
+//  LoginEndpoint.swift
 //  Vitesse
 //
 //  Created by Alexandre Talatinian on 02/01/2025.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AuthEndpoint {
+enum LoginEndpoint {
     struct LoginRequest: Encodable {
         let email: String
         let password: String
