@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct VitesseApp: App {
+    @StateObject var viewModel = AppViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                if viewModel.isLogged {
+                    CandidatesView()
+                } else {
+                    LoginView(viewModel: viewModel.authenticationViewModel)
+                        .transition(.asymmetric(
+                            insertion: .move(edge: .trailing).combined(with: .opacity),
+                            removal: .move(edge: .top).combined(with: .opacity)
+                        ))
+                }
+            }
         }
     }
 }
