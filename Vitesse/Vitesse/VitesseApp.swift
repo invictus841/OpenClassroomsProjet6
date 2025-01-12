@@ -15,9 +15,12 @@ struct VitesseApp: App {
         WindowGroup {
             NavigationStack {
                 if viewModel.isLogged {
-                    CandidatesView()
+                    CandidatesView(viewModel: viewModel.candidatesViewModel)
                 } else {
-                    LoginView(viewModel: viewModel.authenticationViewModel)
+                    LoginView(
+                        viewModel: viewModel.authenticationViewModel,
+                        registerViewModel: viewModel.registerViewModel
+                    )
                         .transition(.asymmetric(
                             insertion: .move(edge: .trailing).combined(with: .opacity),
                             removal: .move(edge: .top).combined(with: .opacity)
