@@ -6,20 +6,121 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ACCF653F2D31276E0095EEA8 /* CandidatesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65102D31276E0095EEA8 /* CandidatesEndpoint.swift */; };
+		ACCF65402D31276E0095EEA8 /* CandidatesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65112D31276E0095EEA8 /* CandidatesMapper.swift */; };
+		ACCF65412D31276E0095EEA8 /* CandidatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65122D31276E0095EEA8 /* CandidatesService.swift */; };
+		ACCF65422D31276E0095EEA8 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65142D31276E0095EEA8 /* URLSessionHTTPClient.swift */; };
+		ACCF65432D31276E0095EEA8 /* LoginEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65162D31276E0095EEA8 /* LoginEndpoint.swift */; };
+		ACCF65442D31276E0095EEA8 /* LoginMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65172D31276E0095EEA8 /* LoginMapper.swift */; };
+		ACCF65452D31276E0095EEA8 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65182D31276E0095EEA8 /* LoginService.swift */; };
+		ACCF65462D31276E0095EEA8 /* RegisterEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF651A2D31276E0095EEA8 /* RegisterEndpoint.swift */; };
+		ACCF65472D31276E0095EEA8 /* RegisterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF651B2D31276E0095EEA8 /* RegisterMapper.swift */; };
+		ACCF65482D31276E0095EEA8 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF651C2D31276E0095EEA8 /* RegisterService.swift */; };
+		ACCF65492D31276E0095EEA8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF651E2D31276E0095EEA8 /* HTTPClient.swift */; };
+		ACCF654A2D31276E0095EEA8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF651F2D31276E0095EEA8 /* NetworkError.swift */; };
+		ACCF654B2D31276E0095EEA8 /* KeychainTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65212D31276E0095EEA8 /* KeychainTokenStore.swift */; };
+		ACCF654C2D31276E0095EEA8 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65222D31276E0095EEA8 /* TokenStore.swift */; };
+		ACCF654D2D31276E0095EEA8 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65252D31276E0095EEA8 /* Candidate.swift */; };
+		ACCF654E2D31276E0095EEA8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65292D31276E0095EEA8 /* CustomTextField.swift */; };
+		ACCF654F2D31276E0095EEA8 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF652A2D31276E0095EEA8 /* FavoriteButton.swift */; };
+		ACCF65502D31276E0095EEA8 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF652B2D31276E0095EEA8 /* InfoRow.swift */; };
+		ACCF65512D31276E0095EEA8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF652C2D31276E0095EEA8 /* PrimaryButton.swift */; };
+		ACCF65522D31276E0095EEA8 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF652D2D31276E0095EEA8 /* SecondaryButton.swift */; };
+		ACCF65532D31276E0095EEA8 /* AdminAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF652F2D31276E0095EEA8 /* AdminAlertModifier.swift */; };
+		ACCF65542D31276E0095EEA8 /* CandidateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65312D31276E0095EEA8 /* CandidateDetailView.swift */; };
+		ACCF65552D31276E0095EEA8 /* CandidatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65322D31276E0095EEA8 /* CandidatesView.swift */; };
+		ACCF65562D31276E0095EEA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65332D31276E0095EEA8 /* LoginView.swift */; };
+		ACCF65572D31276E0095EEA8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65342D31276E0095EEA8 /* RegisterView.swift */; };
+		ACCF65582D31276E0095EEA8 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65372D31276E0095EEA8 /* AppViewModel.swift */; };
+		ACCF65592D31276E0095EEA8 /* CandidateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65382D31276E0095EEA8 /* CandidateViewModel.swift */; };
+		ACCF655A2D31276E0095EEA8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65392D31276E0095EEA8 /* LoginViewModel.swift */; };
+		ACCF655B2D31276E0095EEA8 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF653A2D31276E0095EEA8 /* RegisterViewModel.swift */; };
+		ACCF655C2D31276E0095EEA8 /* VitesseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF653D2D31276E0095EEA8 /* VitesseApp.swift */; };
+		ACCF655D2D31276E0095EEA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCF65272D31276E0095EEA8 /* Preview Assets.xcassets */; };
+		ACCF655E2D31276E0095EEA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCF653C2D31276E0095EEA8 /* Assets.xcassets */; };
+		ACCF65692D31277F0095EEA8 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF655F2D31277F0095EEA8 /* HTTPClientStub.swift */; };
+		ACCF656A2D31277F0095EEA8 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65602D31277F0095EEA8 /* TestHelpers.swift */; };
+		ACCF656B2D31277F0095EEA8 /* TokenStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65612D31277F0095EEA8 /* TokenStoreSpy.swift */; };
+		ACCF656C2D31277F0095EEA8 /* CandidatesEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65632D31277F0095EEA8 /* CandidatesEndpointTests.swift */; };
+		ACCF656D2D31277F0095EEA8 /* CandidateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65642D31277F0095EEA8 /* CandidateServiceTests.swift */; };
+		ACCF656E2D31277F0095EEA8 /* CandidatesMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65652D31277F0095EEA8 /* CandidatesMapperTests.swift */; };
+		ACCF65722D3333100095EEA8 /* LoginEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65712D3333100095EEA8 /* LoginEndpointTests.swift */; };
+		ACCF65742D3334AE0095EEA8 /* LoginMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65732D3334AE0095EEA8 /* LoginMapperTests.swift */; };
+		ACCF65762D3336090095EEA8 /* LoginServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65752D3336090095EEA8 /* LoginServiceTests.swift */; };
+		ACCF65792D3339F00095EEA8 /* RegisterEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65782D3339F00095EEA8 /* RegisterEndpointTests.swift */; };
+		ACCF657B2D333AC60095EEA8 /* RegisterMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF657A2D333AC60095EEA8 /* RegisterMapperTests.swift */; };
+		ACCF657D2D333B800095EEA8 /* RegisterServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF657C2D333B800095EEA8 /* RegisterServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACCF64F52D311BBA0095EEA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0CF6422D0C2B240079D7EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0CF6492D0C2B240079D7EE;
+			remoteInfo = Vitesse;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AC0CF64A2D0C2B240079D7EE /* Vitesse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vitesse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF64F12D311BBA0095EEA8 /* VitesseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VitesseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF65102D31276E0095EEA8 /* CandidatesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesEndpoint.swift; sourceTree = "<group>"; };
+		ACCF65112D31276E0095EEA8 /* CandidatesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesMapper.swift; sourceTree = "<group>"; };
+		ACCF65122D31276E0095EEA8 /* CandidatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesService.swift; sourceTree = "<group>"; };
+		ACCF65142D31276E0095EEA8 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		ACCF65162D31276E0095EEA8 /* LoginEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndpoint.swift; sourceTree = "<group>"; };
+		ACCF65172D31276E0095EEA8 /* LoginMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMapper.swift; sourceTree = "<group>"; };
+		ACCF65182D31276E0095EEA8 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		ACCF651A2D31276E0095EEA8 /* RegisterEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEndpoint.swift; sourceTree = "<group>"; };
+		ACCF651B2D31276E0095EEA8 /* RegisterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMapper.swift; sourceTree = "<group>"; };
+		ACCF651C2D31276E0095EEA8 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		ACCF651E2D31276E0095EEA8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		ACCF651F2D31276E0095EEA8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		ACCF65212D31276E0095EEA8 /* KeychainTokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTokenStore.swift; sourceTree = "<group>"; };
+		ACCF65222D31276E0095EEA8 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		ACCF65252D31276E0095EEA8 /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		ACCF65272D31276E0095EEA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACCF65292D31276E0095EEA8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		ACCF652A2D31276E0095EEA8 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		ACCF652B2D31276E0095EEA8 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		ACCF652C2D31276E0095EEA8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		ACCF652D2D31276E0095EEA8 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		ACCF652F2D31276E0095EEA8 /* AdminAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAlertModifier.swift; sourceTree = "<group>"; };
+		ACCF65312D31276E0095EEA8 /* CandidateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateDetailView.swift; sourceTree = "<group>"; };
+		ACCF65322D31276E0095EEA8 /* CandidatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesView.swift; sourceTree = "<group>"; };
+		ACCF65332D31276E0095EEA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ACCF65342D31276E0095EEA8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		ACCF65372D31276E0095EEA8 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		ACCF65382D31276E0095EEA8 /* CandidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewModel.swift; sourceTree = "<group>"; };
+		ACCF65392D31276E0095EEA8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		ACCF653A2D31276E0095EEA8 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		ACCF653C2D31276E0095EEA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACCF653D2D31276E0095EEA8 /* VitesseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitesseApp.swift; sourceTree = "<group>"; };
+		ACCF655F2D31277F0095EEA8 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		ACCF65602D31277F0095EEA8 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		ACCF65612D31277F0095EEA8 /* TokenStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStoreSpy.swift; sourceTree = "<group>"; };
+		ACCF65632D31277F0095EEA8 /* CandidatesEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesEndpointTests.swift; sourceTree = "<group>"; };
+		ACCF65642D31277F0095EEA8 /* CandidateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateServiceTests.swift; sourceTree = "<group>"; };
+		ACCF65652D31277F0095EEA8 /* CandidatesMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesMapperTests.swift; sourceTree = "<group>"; };
+		ACCF65712D3333100095EEA8 /* LoginEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndpointTests.swift; sourceTree = "<group>"; };
+		ACCF65732D3334AE0095EEA8 /* LoginMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMapperTests.swift; sourceTree = "<group>"; };
+		ACCF65752D3336090095EEA8 /* LoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTests.swift; sourceTree = "<group>"; };
+		ACCF65782D3339F00095EEA8 /* RegisterEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEndpointTests.swift; sourceTree = "<group>"; };
+		ACCF657A2D333AC60095EEA8 /* RegisterMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMapperTests.swift; sourceTree = "<group>"; };
+		ACCF657C2D333B800095EEA8 /* RegisterServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		AC0CF64C2D0C2B240079D7EE /* Vitesse */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Vitesse;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC0CF6472D0C2B240079D7EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF64EE2D311BBA0095EEA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +133,8 @@
 		AC0CF6412D0C2B240079D7EE = {
 			isa = PBXGroup;
 			children = (
-				AC0CF64C2D0C2B240079D7EE /* Vitesse */,
+				ACCF653E2D31276E0095EEA8 /* Vitesse */,
+				ACCF65682D31277F0095EEA8 /* VitesseTests */,
 				AC0CF64B2D0C2B240079D7EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +143,227 @@
 			isa = PBXGroup;
 			children = (
 				AC0CF64A2D0C2B240079D7EE /* Vitesse.app */,
+				ACCF64F12D311BBA0095EEA8 /* VitesseTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ACCF65132D31276E0095EEA8 /* Candidates */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65102D31276E0095EEA8 /* CandidatesEndpoint.swift */,
+				ACCF65112D31276E0095EEA8 /* CandidatesMapper.swift */,
+				ACCF65122D31276E0095EEA8 /* CandidatesService.swift */,
+			);
+			path = Candidates;
+			sourceTree = "<group>";
+		};
+		ACCF65152D31276E0095EEA8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65142D31276E0095EEA8 /* URLSessionHTTPClient.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		ACCF65192D31276E0095EEA8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65162D31276E0095EEA8 /* LoginEndpoint.swift */,
+				ACCF65172D31276E0095EEA8 /* LoginMapper.swift */,
+				ACCF65182D31276E0095EEA8 /* LoginService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ACCF651D2D31276E0095EEA8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF651A2D31276E0095EEA8 /* RegisterEndpoint.swift */,
+				ACCF651B2D31276E0095EEA8 /* RegisterMapper.swift */,
+				ACCF651C2D31276E0095EEA8 /* RegisterService.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		ACCF65202D31276E0095EEA8 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65132D31276E0095EEA8 /* Candidates */,
+				ACCF65152D31276E0095EEA8 /* Infrastructure */,
+				ACCF65192D31276E0095EEA8 /* Login */,
+				ACCF651D2D31276E0095EEA8 /* Register */,
+				ACCF651E2D31276E0095EEA8 /* HTTPClient.swift */,
+				ACCF651F2D31276E0095EEA8 /* NetworkError.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		ACCF65232D31276E0095EEA8 /* TokenManager */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65212D31276E0095EEA8 /* KeychainTokenStore.swift */,
+				ACCF65222D31276E0095EEA8 /* TokenStore.swift */,
+			);
+			path = TokenManager;
+			sourceTree = "<group>";
+		};
+		ACCF65242D31276E0095EEA8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65202D31276E0095EEA8 /* NetworkManager */,
+				ACCF65232D31276E0095EEA8 /* TokenManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		ACCF65262D31276E0095EEA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65252D31276E0095EEA8 /* Candidate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACCF65282D31276E0095EEA8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65272D31276E0095EEA8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACCF652E2D31276E0095EEA8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65292D31276E0095EEA8 /* CustomTextField.swift */,
+				ACCF652A2D31276E0095EEA8 /* FavoriteButton.swift */,
+				ACCF652B2D31276E0095EEA8 /* InfoRow.swift */,
+				ACCF652C2D31276E0095EEA8 /* PrimaryButton.swift */,
+				ACCF652D2D31276E0095EEA8 /* SecondaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ACCF65302D31276E0095EEA8 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF652F2D31276E0095EEA8 /* AdminAlertModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		ACCF65352D31276E0095EEA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65312D31276E0095EEA8 /* CandidateDetailView.swift */,
+				ACCF65322D31276E0095EEA8 /* CandidatesView.swift */,
+				ACCF65332D31276E0095EEA8 /* LoginView.swift */,
+				ACCF65342D31276E0095EEA8 /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACCF65362D31276E0095EEA8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF652E2D31276E0095EEA8 /* Components */,
+				ACCF65302D31276E0095EEA8 /* Modifiers */,
+				ACCF65352D31276E0095EEA8 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ACCF653B2D31276E0095EEA8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65372D31276E0095EEA8 /* AppViewModel.swift */,
+				ACCF65382D31276E0095EEA8 /* CandidateViewModel.swift */,
+				ACCF65392D31276E0095EEA8 /* LoginViewModel.swift */,
+				ACCF653A2D31276E0095EEA8 /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ACCF653E2D31276E0095EEA8 /* Vitesse */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65242D31276E0095EEA8 /* Managers */,
+				ACCF65262D31276E0095EEA8 /* Models */,
+				ACCF65282D31276E0095EEA8 /* Preview Content */,
+				ACCF65362D31276E0095EEA8 /* UI */,
+				ACCF653B2D31276E0095EEA8 /* ViewModels */,
+				ACCF653C2D31276E0095EEA8 /* Assets.xcassets */,
+				ACCF653D2D31276E0095EEA8 /* VitesseApp.swift */,
+			);
+			path = Vitesse;
+			sourceTree = "<group>";
+		};
+		ACCF65622D31277F0095EEA8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65602D31277F0095EEA8 /* TestHelpers.swift */,
+				ACCF655F2D31277F0095EEA8 /* HTTPClientStub.swift */,
+				ACCF65612D31277F0095EEA8 /* TokenStoreSpy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ACCF65662D31277F0095EEA8 /* Candidates */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65632D31277F0095EEA8 /* CandidatesEndpointTests.swift */,
+				ACCF65642D31277F0095EEA8 /* CandidateServiceTests.swift */,
+				ACCF65652D31277F0095EEA8 /* CandidatesMapperTests.swift */,
+			);
+			path = Candidates;
+			sourceTree = "<group>";
+		};
+		ACCF65672D31277F0095EEA8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65772D3339500095EEA8 /* Register */,
+				ACCF65702D3332600095EEA8 /* Login */,
+				ACCF65662D31277F0095EEA8 /* Candidates */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		ACCF65682D31277F0095EEA8 /* VitesseTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65622D31277F0095EEA8 /* Helpers */,
+				ACCF65672D31277F0095EEA8 /* Managers */,
+				ACCF657E2D333EF10095EEA8 /* ViewModels */,
+			);
+			path = VitesseTests;
+			sourceTree = "<group>";
+		};
+		ACCF65702D3332600095EEA8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65712D3333100095EEA8 /* LoginEndpointTests.swift */,
+				ACCF65732D3334AE0095EEA8 /* LoginMapperTests.swift */,
+				ACCF65752D3336090095EEA8 /* LoginServiceTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ACCF65772D3339500095EEA8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF65782D3339F00095EEA8 /* RegisterEndpointTests.swift */,
+				ACCF657A2D333AC60095EEA8 /* RegisterMapperTests.swift */,
+				ACCF657C2D333B800095EEA8 /* RegisterServiceTests.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		ACCF657E2D333EF10095EEA8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,15 +381,32 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				AC0CF64C2D0C2B240079D7EE /* Vitesse */,
-			);
 			name = Vitesse;
 			packageProductDependencies = (
 			);
 			productName = Vitesse;
 			productReference = AC0CF64A2D0C2B240079D7EE /* Vitesse.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ACCF64F02D311BBA0095EEA8 /* VitesseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCF64F72D311BBA0095EEA8 /* Build configuration list for PBXNativeTarget "VitesseTests" */;
+			buildPhases = (
+				ACCF64ED2D311BBA0095EEA8 /* Sources */,
+				ACCF64EE2D311BBA0095EEA8 /* Frameworks */,
+				ACCF64EF2D311BBA0095EEA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACCF64F62D311BBA0095EEA8 /* PBXTargetDependency */,
+			);
+			name = VitesseTests;
+			packageProductDependencies = (
+			);
+			productName = VitesseTests;
+			productReference = ACCF64F12D311BBA0095EEA8 /* VitesseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -77,11 +415,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					AC0CF6492D0C2B240079D7EE = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					ACCF64F02D311BBA0095EEA8 = {
+						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
+						TestTargetID = AC0CF6492D0C2B240079D7EE;
 					};
 				};
 			};
@@ -100,12 +443,22 @@
 			projectRoot = "";
 			targets = (
 				AC0CF6492D0C2B240079D7EE /* Vitesse */,
+				ACCF64F02D311BBA0095EEA8 /* VitesseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AC0CF6482D0C2B240079D7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF655D2D31276E0095EEA8 /* Preview Assets.xcassets in Resources */,
+				ACCF655E2D31276E0095EEA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF64EF2D311BBA0095EEA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +472,67 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCF653F2D31276E0095EEA8 /* CandidatesEndpoint.swift in Sources */,
+				ACCF65402D31276E0095EEA8 /* CandidatesMapper.swift in Sources */,
+				ACCF65412D31276E0095EEA8 /* CandidatesService.swift in Sources */,
+				ACCF65422D31276E0095EEA8 /* URLSessionHTTPClient.swift in Sources */,
+				ACCF65432D31276E0095EEA8 /* LoginEndpoint.swift in Sources */,
+				ACCF65442D31276E0095EEA8 /* LoginMapper.swift in Sources */,
+				ACCF65452D31276E0095EEA8 /* LoginService.swift in Sources */,
+				ACCF65462D31276E0095EEA8 /* RegisterEndpoint.swift in Sources */,
+				ACCF65472D31276E0095EEA8 /* RegisterMapper.swift in Sources */,
+				ACCF65482D31276E0095EEA8 /* RegisterService.swift in Sources */,
+				ACCF65492D31276E0095EEA8 /* HTTPClient.swift in Sources */,
+				ACCF654A2D31276E0095EEA8 /* NetworkError.swift in Sources */,
+				ACCF654B2D31276E0095EEA8 /* KeychainTokenStore.swift in Sources */,
+				ACCF654C2D31276E0095EEA8 /* TokenStore.swift in Sources */,
+				ACCF654D2D31276E0095EEA8 /* Candidate.swift in Sources */,
+				ACCF654E2D31276E0095EEA8 /* CustomTextField.swift in Sources */,
+				ACCF654F2D31276E0095EEA8 /* FavoriteButton.swift in Sources */,
+				ACCF65502D31276E0095EEA8 /* InfoRow.swift in Sources */,
+				ACCF65512D31276E0095EEA8 /* PrimaryButton.swift in Sources */,
+				ACCF65522D31276E0095EEA8 /* SecondaryButton.swift in Sources */,
+				ACCF65532D31276E0095EEA8 /* AdminAlertModifier.swift in Sources */,
+				ACCF65542D31276E0095EEA8 /* CandidateDetailView.swift in Sources */,
+				ACCF65552D31276E0095EEA8 /* CandidatesView.swift in Sources */,
+				ACCF65562D31276E0095EEA8 /* LoginView.swift in Sources */,
+				ACCF65572D31276E0095EEA8 /* RegisterView.swift in Sources */,
+				ACCF65582D31276E0095EEA8 /* AppViewModel.swift in Sources */,
+				ACCF65592D31276E0095EEA8 /* CandidateViewModel.swift in Sources */,
+				ACCF655A2D31276E0095EEA8 /* LoginViewModel.swift in Sources */,
+				ACCF655B2D31276E0095EEA8 /* RegisterViewModel.swift in Sources */,
+				ACCF655C2D31276E0095EEA8 /* VitesseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF64ED2D311BBA0095EEA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF65692D31277F0095EEA8 /* HTTPClientStub.swift in Sources */,
+				ACCF65722D3333100095EEA8 /* LoginEndpointTests.swift in Sources */,
+				ACCF65742D3334AE0095EEA8 /* LoginMapperTests.swift in Sources */,
+				ACCF65792D3339F00095EEA8 /* RegisterEndpointTests.swift in Sources */,
+				ACCF65762D3336090095EEA8 /* LoginServiceTests.swift in Sources */,
+				ACCF656A2D31277F0095EEA8 /* TestHelpers.swift in Sources */,
+				ACCF657D2D333B800095EEA8 /* RegisterServiceTests.swift in Sources */,
+				ACCF656B2D31277F0095EEA8 /* TokenStoreSpy.swift in Sources */,
+				ACCF657B2D333AC60095EEA8 /* RegisterMapperTests.swift in Sources */,
+				ACCF656C2D31277F0095EEA8 /* CandidatesEndpointTests.swift in Sources */,
+				ACCF656D2D31277F0095EEA8 /* CandidateServiceTests.swift in Sources */,
+				ACCF656E2D31277F0095EEA8 /* CandidatesMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACCF64F62D311BBA0095EEA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0CF6492D0C2B240079D7EE /* Vitesse */;
+			targetProxy = ACCF64F52D311BBA0095EEA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AC0CF6562D0C2B260079D7EE /* Debug */ = {
@@ -302,6 +712,47 @@
 			};
 			name = Release;
 		};
+		ACCF64F82D311BBA0095EEA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJWKSQXR8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexandre-Narek.VitesseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vitesse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vitesse";
+			};
+			name = Debug;
+		};
+		ACCF64F92D311BBA0095EEA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJWKSQXR8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexandre-Narek.VitesseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vitesse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vitesse";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +770,15 @@
 			buildConfigurations = (
 				AC0CF6592D0C2B260079D7EE /* Debug */,
 				AC0CF65A2D0C2B260079D7EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCF64F72D311BBA0095EEA8 /* Build configuration list for PBXNativeTarget "VitesseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCF64F82D311BBA0095EEA8 /* Debug */,
+				ACCF64F92D311BBA0095EEA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
