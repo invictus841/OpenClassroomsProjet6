@@ -13,11 +13,12 @@ enum LoginMapper {
         let isAdmin: Bool
     }
     
-    static func map(_ data: Data, and response: HTTPURLResponse) throws -> String {
-        guard let loginResponse = try? JSONDecoder().decode(LoginResponse.self, from: data) else {
+    static func map(_ data: Data, and response: HTTPURLResponse) throws -> (token: String, isAdmin: Bool) {
+        guard response.statusCode == 200,
+              let loginResponse = try? JSONDecoder().decode(LoginResponse.self, from: data) else {
             throw NetworkError.invalidResponse
         }
         
-        return loginResponse.token
+        return (loginResponse.token, loginResponse.isAdmin)
     }
 }
