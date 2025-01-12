@@ -26,6 +26,11 @@ final class LoginViewModel: ObservableObject {
     
     @MainActor
     func login() async {
+        guard !email.isEmpty || !password.isEmpty else {
+            errorMessage = "Email and password cannot be empty"
+            return
+        }
+        
         do {
             let request = try LoginEndpoint.loginRequest(email: email, password: password)
             let (token, isAdmin) = try await loginService.login(with: request)
