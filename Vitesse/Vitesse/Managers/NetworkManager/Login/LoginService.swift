@@ -14,10 +14,8 @@ final class LoginService {
         self.client = client
     }
     
-    func requestToken(from request: URLRequest) async throws -> String {
+    func login(with request: URLRequest) async throws -> (token: String, isAdmin: Bool) {
         let (data, response) = try await client.request(from: request)
-        let token = try LoginMapper.map(data, and: response)
-        
-        return token
+        return try LoginMapper.map(data, and: response)
     }
 }
