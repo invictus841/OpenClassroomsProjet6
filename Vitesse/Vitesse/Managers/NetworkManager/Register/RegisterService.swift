@@ -21,7 +21,11 @@ final class RegisterService {
             email: email,
             password: password
         )
+        
+        
         let (data, response) = try await client.request(from: request)
+        
+        
         try RegisterMapper.map(data, and: response)
     }
 }
