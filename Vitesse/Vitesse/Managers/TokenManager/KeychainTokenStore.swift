@@ -22,8 +22,7 @@ final class KeychainStore: TokenStore {
     }
 
     func insert(_ data: Data) throws {
-        // First try to delete any existing token
-        try? delete()  // Use try? so it doesn't throw if nothing exists to delete
+        try? delete()
         
         let query = [
             kSecClass: kSecClassGenericPassword,

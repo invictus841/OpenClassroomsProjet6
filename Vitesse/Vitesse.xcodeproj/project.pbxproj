@@ -51,6 +51,10 @@
 		ACCF65792D3339F00095EEA8 /* RegisterEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65782D3339F00095EEA8 /* RegisterEndpointTests.swift */; };
 		ACCF657B2D333AC60095EEA8 /* RegisterMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF657A2D333AC60095EEA8 /* RegisterMapperTests.swift */; };
 		ACCF657D2D333B800095EEA8 /* RegisterServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF657C2D333B800095EEA8 /* RegisterServiceTests.swift */; };
+		ACCF65802D34462B0095EEA8 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF657F2D34462B0095EEA8 /* LoginViewModelTests.swift */; };
+		ACCF65822D359B3F0095EEA8 /* RegisterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65812D359B3F0095EEA8 /* RegisterViewModelTests.swift */; };
+		ACCF65842D359F750095EEA8 /* CandidateViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65832D359F750095EEA8 /* CandidateViewModelTests.swift */; };
+		ACCF65862D35A4D10095EEA8 /* AppViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF65852D35A4D10095EEA8 /* AppViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +114,10 @@
 		ACCF65782D3339F00095EEA8 /* RegisterEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEndpointTests.swift; sourceTree = "<group>"; };
 		ACCF657A2D333AC60095EEA8 /* RegisterMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMapperTests.swift; sourceTree = "<group>"; };
 		ACCF657C2D333B800095EEA8 /* RegisterServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterServiceTests.swift; sourceTree = "<group>"; };
+		ACCF657F2D34462B0095EEA8 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		ACCF65812D359B3F0095EEA8 /* RegisterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModelTests.swift; sourceTree = "<group>"; };
+		ACCF65832D359F750095EEA8 /* CandidateViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewModelTests.swift; sourceTree = "<group>"; };
+		ACCF65852D35A4D10095EEA8 /* AppViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +370,10 @@
 		ACCF657E2D333EF10095EEA8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				ACCF657F2D34462B0095EEA8 /* LoginViewModelTests.swift */,
+				ACCF65812D359B3F0095EEA8 /* RegisterViewModelTests.swift */,
+				ACCF65832D359F750095EEA8 /* CandidateViewModelTests.swift */,
+				ACCF65852D35A4D10095EEA8 /* AppViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -511,11 +523,15 @@
 			files = (
 				ACCF65692D31277F0095EEA8 /* HTTPClientStub.swift in Sources */,
 				ACCF65722D3333100095EEA8 /* LoginEndpointTests.swift in Sources */,
+				ACCF65862D35A4D10095EEA8 /* AppViewModelTests.swift in Sources */,
 				ACCF65742D3334AE0095EEA8 /* LoginMapperTests.swift in Sources */,
+				ACCF65822D359B3F0095EEA8 /* RegisterViewModelTests.swift in Sources */,
+				ACCF65802D34462B0095EEA8 /* LoginViewModelTests.swift in Sources */,
 				ACCF65792D3339F00095EEA8 /* RegisterEndpointTests.swift in Sources */,
 				ACCF65762D3336090095EEA8 /* LoginServiceTests.swift in Sources */,
 				ACCF656A2D31277F0095EEA8 /* TestHelpers.swift in Sources */,
 				ACCF657D2D333B800095EEA8 /* RegisterServiceTests.swift in Sources */,
+				ACCF65842D359F750095EEA8 /* CandidateViewModelTests.swift in Sources */,
 				ACCF656B2D31277F0095EEA8 /* TokenStoreSpy.swift in Sources */,
 				ACCF657B2D333AC60095EEA8 /* RegisterMapperTests.swift in Sources */,
 				ACCF656C2D31277F0095EEA8 /* CandidatesEndpointTests.swift in Sources */,
