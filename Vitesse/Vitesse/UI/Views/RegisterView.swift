@@ -46,14 +46,16 @@ struct RegisterView: View {
                     placeholder: "Enter your password",
                     label: "Password",
                     text: $viewModel.password,
-                    isSecure: true
+                    isSecure: true,
+                    contentType: .oneTimeCode
                 )
                 
                 CustomTextField(
                     placeholder: "Confirm your password",
                     label: "Confirm Password",
                     text: $viewModel.confirmPassword,
-                    isSecure: true
+                    isSecure: true,
+                    contentType: .oneTimeCode
                 )
                 
                 if let error = viewModel.errorMessage {
