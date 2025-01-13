@@ -10,6 +10,13 @@ import SwiftUI
 struct InfoRow: View {
     let label: String
     let value: String
+    let isLinkedin: Bool
+    
+    init(label: String, value: String, isLinkedin: Bool = false) {
+        self.label = label
+        self.value = value
+        self.isLinkedin = isLinkedin
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -17,11 +24,20 @@ struct InfoRow: View {
                 .font(.system(size: 16, weight: .medium))
                 .foregroundColor(.gray)
             
-            Text(value)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
+            if isLinkedin && value != "Not provided" {
+                Link(value, destination: URL(string: value) ?? URL(string: "https://www.linkedin.com")!)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                    .foregroundColor(.blue)
+            } else {
+                Text(value)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+            }
         }
     }
 }
