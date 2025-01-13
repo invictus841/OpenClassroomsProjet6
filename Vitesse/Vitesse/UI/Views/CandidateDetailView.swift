@@ -29,11 +29,10 @@ struct CandidateDetailView: View {
     }
     
     private var candidate: Candidate {
-        // First check in filtered candidates to ensure we get updated data
         if let candidate = viewModel.filteredCandidates.first(where: { $0.id == candidateId }) {
             return candidate
         }
-        // Fallback to current candidate if needed
+        
         return viewModel.currentCandidate ?? viewModel.candidates.first(where: { $0.id == candidateId })!
     }
     
@@ -62,7 +61,6 @@ struct CandidateDetailView: View {
                     .padding(.bottom, 8)
                     
                     if isEditing {
-                        // Editable fields
                         VStack(spacing: 16) {
                             CustomTextField(
                                 placeholder: "Enter phone number",
@@ -126,7 +124,7 @@ struct CandidateDetailView: View {
                         VStack(spacing: 20) {
                             InfoRow(label: "Phone", value: candidate.phone ?? "Not provided")
                             InfoRow(label: "Email", value: candidate.email)
-                            InfoRow(label: "LinkedIn", value: candidate.linkedinURL ?? "Not provided")
+                            InfoRow(label: "LinkedIn", value: candidate.linkedinURL ?? "Not provided", isLinkedin: true)
                             
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("Note")
