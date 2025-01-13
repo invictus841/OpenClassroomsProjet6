@@ -51,7 +51,8 @@ func makeCandidate(
     phone: String? = nil,
     linkedinURL: String? = nil,
     note: String? = nil,
-    isFavorite: Bool = false
+    isFavorite: Bool = false,
+    isSelected: Bool = false
 ) -> Candidate {
     return Candidate(
         id: id,
@@ -61,13 +62,27 @@ func makeCandidate(
         phone: phone,
         linkedinURL: linkedinURL,
         note: note,
-        isFavorite: isFavorite
+        isFavorite: isFavorite,
+        isSelected: isSelected
     )
 }
 
 // MARK: - JSON Helpers
 func makeJSON(_ value: Any) -> Data {
     return try! JSONSerialization.data(withJSONObject: value)
+}
+
+func makeCandidateJSON(_ candidate: Candidate) -> [String: Any] {
+    return [
+        "id": candidate.id.uuidString,
+        "firstName": candidate.firstName,
+        "lastName": candidate.lastName,
+        "email": candidate.email,
+        "phone": candidate.phone as Any,
+        "linkedinURL": candidate.linkedinURL as Any,
+        "note": candidate.note as Any,
+        "isFavorite": candidate.isFavorite
+    ]
 }
 
 // MARK: - Memory Leak Tracker
