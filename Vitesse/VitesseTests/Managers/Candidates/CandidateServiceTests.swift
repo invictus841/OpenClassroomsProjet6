@@ -196,23 +196,4 @@ final class CandidateServiceTests: XCTestCase {
         
         return (sut, client, tokenStore)
     }
-    
-    private func makeCandidateJSON(_ candidate: Candidate) -> [String: Any] {
-        return [
-            "id": candidate.id.uuidString,
-            "firstName": candidate.firstName,
-            "lastName": candidate.lastName,
-            "email": candidate.email,
-            "phone": candidate.phone as Any,
-            "linkedinURL": candidate.linkedinURL as Any,
-            "note": candidate.note as Any,
-            "isFavorite": candidate.isFavorite
-        ]
-    }
-    
-//    private func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #filePath, line: UInt = #line) {
-//        addTeardownBlock { [weak instance] in
-//            XCTAssertNil(instance, "Instance should have been deallocated. Potential memory leak.", file: file, line: line)
-//        }
-//    }
 }
